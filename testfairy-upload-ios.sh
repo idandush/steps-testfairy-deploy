@@ -25,8 +25,7 @@ VIDEO="$video_recording"
 # Comment text will be included in the email sent to testers
 COMMENT="$comment"
 
-
-ADVANCED_OPTIONS = ""
+ADVANCED_OPTIONS=""
 
 DSYM_FILENAME="$dsym_path"
 
@@ -41,8 +40,8 @@ usage() {
 }
 
 generate_advanced_settings() {
-	if [ "$inapp_bug_reporting" == "on"]; then
-	    ADVANCED_OPTIONS = "shake"
+	if [ "$inapp_bug_reporting"=="on" ]; then
+	    ADVANCED_OPTIONS="shake"
 	fi
 }
 
